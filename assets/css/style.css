@@ -1,45 +1,45 @@
-/**
- * Float Layout Activity
- **/
-
+/*----------Default HTML Style----------*/
 * {
   box-sizing: border-box;
   text-align: center;
   background: #777;
 }
 
-header {
-    background: #ddd;
+div {
     width: 960px;
-    height: 80px;
-    padding: 20px;
+    height: 300px;
     margin: auto;
-    margin-bottom: 10px;
-}
-
-#nav {
-    margin-bottom: 20px;
 }
 
 section {
     background: #ddd;
     width: 560px;
     height: 300px;
-    display: inline-block;
-    margin: 0 20px 20px 0;
+    float: left;
 }
 
 aside {
     background: #ddd;
-    width: 376px;
+    width: 380px;
     height: 300px;
-    display: inline-block;
+    float: right;
 }
 
-footer {
+/*----------Class style----------*/
+.hbar {
     background: #ddd;
     width: 960px;
     height: 80px;
+    padding: 30px;
     margin: auto;
-    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/*-----------ID Style----------*/
+#nav {
+    margin-bottom: 20px;
+}
+
+#footer {
+    margin-top: 20px;
 }

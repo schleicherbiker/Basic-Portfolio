@@ -38,6 +38,10 @@ aside {
     justify-content: center;
 }
 
+.noborder {
+    border: 0;
+}
+
 .button {
     padding: 0 10px 0 10px;
     height: 96px;
@@ -62,8 +66,9 @@ aside {
     position: relative;
     top: 16px;
     height: 80px;
-    width: 320px;
+    padding: 0 30px 0 30px;
     font-size: 36px;
+    font-weight: bold;
     background:#4aaaa5;
     color: white;
 }
@@ -78,6 +83,18 @@ aside {
     padding: 0;
 }
 
+#connectTitle {
+    display: inline;
+    position: relative;
+    top: 20px;
+    padding: 20px 0 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    background: pink;
+    border-bottom: 2px #cccccc solid;
+}
+
 #footer {
     margin-top: 20px;
 }
+

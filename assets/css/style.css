@@ -11,24 +11,33 @@ body {
 header {
     height: 96px;
     border-bottom: 2px #cccccc solid;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     background: white;
+    width: 100%;
 }
 
 div {
     width: 956px;
-    height: 300px;
+    height: 96px;
     margin: auto;
     border: solid 2px #cccccc;
 }
 
 aside {
-    background: green;
-    width: 270px;
-    height: 300px;
+    border: solid 2px #cccccc;
+    background: white;
+    width: 266px;
+    height: 190px;
     float: right;
     color: #4aaaa5;
+}
+
+footer {
+    display: block;
+    border-top: solid 5px #4aaaa5;
+    background: #666;
+    color: #ddd;;
 }
 
 /*----------Class style----------*/
@@ -42,17 +51,47 @@ aside {
     border: 0;
 }
 
+.alignLeft {
+    text-align: left;
+}
+
 .button {
     padding: 0 10px 0 10px;
     height: 96px;
     font-size: 20px;
     float: right;
-    color: #cccccc;
+    color: #aaa;
+    transition: .2s ease;
 }
 
 .button:hover {
-    background: #eeeeee;
+    background: #ddd;
 }
+
+.icon {
+    padding: 0 5px 0 5px;
+    height: 56px;
+    width: 56px;
+    border-radius: 25%;
+    overflow: hidden;
+    opacity: 1;
+    transition: .3s ease;
+}
+
+.icon:hover {
+    opacity: .4;
+}
+
+.aboutMe {
+    width: 580px;
+    color: #4aaaa5;
+    font-weight: bold;
+    font-size: 38px;
+    border-bottom: 2px #cccccc solid;
+    height: 80px;
+    justify-content: left;
+}
+
 /*-----------ID Style----------*/
 #headerContent {
     border: 0;
@@ -73,28 +112,66 @@ aside {
     color: white;
 }
 
+#profilePic {
+    float: left;
+    margin: 0 30px 12px 0;
+}
+
 #mainContent {
     float: left;
-    width: 650px;
-    background: yellow;
+    width: 646px;
+    height: 100%;
+    background: white;
 }
 
 #separator {
     padding: 0;
+    height: 96px;
+    font-size: 20px;
+    float: right;
+    color: #aaa;
+    transition: .2s ease;
 }
 
 #connectTitle {
     display: inline;
     position: relative;
-    top: 20px;
+    top: 26px;
     padding: 20px 0 20px 0;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
-    background: pink;
     border-bottom: 2px #cccccc solid;
 }
 
+#content {
+    display: block;
+    height: auto;
+    clear: both;
+}
+
+#textAboutMe {
+    margin: 34px;
+    width: 580px;
+    font-size: 20px;
+    color: #777;
+    height: auto;
+    float: right;
+    line-height: 175%;
+}
+
+#images {
+    width: 230px;
+    height: 60px;
+    position: relative;
+    top: 76px;
+}
+
 #footer {
-    margin-top: 20px;
+    margin-top: 40px;
+    height: 96px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 

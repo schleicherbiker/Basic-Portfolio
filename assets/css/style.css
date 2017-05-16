@@ -1,8 +1,18 @@
 /*----------Default HTML Style----------*/
-* {
-  box-sizing: border-box;
-  text-align: center;
-  background: #777;
+body {
+    background-image: url("assets/images/cork-wallet.png") repeat 0 0;
+}
+
+header {
+    height: 96px;
+    border-bottom: 2px #cccccc solid;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 div {
@@ -26,18 +36,44 @@ aside {
 }
 
 /*----------Class style----------*/
-.hbar {
-    background: #ddd;
-    width: 960px;
-    height: 80px;
-    padding: 30px;
-    margin: auto;
-    margin-bottom: 10px;
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.button {
+    padding: 0 10px 0 10px;
+    height: 96px;
+    font-size: 20px;
+    float: right;
+    color: #cccccc;
+}
+
+.button:hover {
+    background: #eeeeee;
+}
 /*-----------ID Style----------*/
-#nav {
-    margin-bottom: 20px;
+#headerContent {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    margin: auto;
+    width: 960px;
+    height: 96px;
+}
+#headerName {
+    float:left;
+    height: 96px;
+    width: 320px;
+    font-size: 36px;
+    background:#4aaaa5;
+    color: white;
+}
+
+#contact, #portfolio, #about {
+}
+
+#separator {
+    padding: 0;
 }
 
 #footer {

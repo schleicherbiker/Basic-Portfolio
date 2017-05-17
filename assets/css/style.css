@@ -3,9 +3,22 @@
     text-align: center;
 }
 
+html {
+    height: 100%;
+}
+
+p {
+    font-size: 20px;
+    color: #777;
+    line-height: 175%;
+}
+
 body {
     background-image: url("../images/cork-wallet.png");
     background-repeat: repeat;
+    min-height: 100%;
+    position: relative;
+    border: 0;
 }
 
 header {
@@ -33,11 +46,73 @@ aside {
     color: #4aaaa5;
 }
 
+input {
+    box-sizing: border-box;
+    width: calc(100%);
+    height: 36px;
+    text-align: left;
+    padding: 0 12px 0 12px;
+    margin-bottom: 12px;
+    border: 1px #ccc solid;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input[id=message] {
+    height: 100px;
+    text-align: top;
+}
+
+input[type=text]:focus {
+    border: 2px solid #bbb;
+}
+
+input[type=submit] {
+    margin: 6px 0 0 0;
+    border: 0;
+    border-radius: 0;
+    width: 108px;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+    color: white;
+    font-size: 18px;
+    background: #4aaaa5;
+}
+
+input[type=submit]:hover {
+    background: #499995;
+}
+
+textarea {
+    box-sizing: border-box;
+    outline: none;
+    text-align: left;
+    width: 100%;
+    height: 128px;
+    padding: 12px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-bottom: 12px;
+    line-height: 150%;
+    border: 1px #ccc solid;
+    border-radius: 4px;
+}
+
+textarea:focus {
+    box-sizing: border-box;
+    border: 2px #bbb solid;
+}
+
 footer {
-    display: block;
     border-top: solid 5px #4aaaa5;
     background: #666;
-    color: #ddd;;
+    color: #ddd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 96px;
 }
 
 /*----------Class style----------*/
@@ -82,7 +157,7 @@ footer {
     opacity: .4;
 }
 
-.aboutMe {
+.contentTitle {
     width: 580px;
     color: #4aaaa5;
     font-weight: bold;
@@ -90,6 +165,27 @@ footer {
     border-bottom: 2px #cccccc solid;
     height: 80px;
     justify-content: left;
+}
+
+.separator {
+    padding: 0;
+    height: 96px;
+    font-size: 20px;
+    float: right;
+    color: #aaa;
+    transition: .2s ease;
+}
+
+.contactBox {
+    width: 580px;
+    height: auto;
+    display: inline-block;
+    margin: 34px auto;
+}
+
+.contact {
+    width: 100%;
+    text-align: left;   
 }
 
 /*-----------ID Style----------*/
@@ -118,19 +214,13 @@ footer {
 }
 
 #mainContent {
-    float: left;
+    margin: 0;
     width: 646px;
-    height: 100%;
+    height: auto;
     background: white;
-}
-
-#separator {
-    padding: 0;
-    height: 96px;
-    font-size: 20px;
-    float: right;
-    color: #aaa;
-    transition: .2s ease;
+    display: inline-block;
+    position: relative;
+    right: 20px;
 }
 
 #connectTitle {
@@ -144,19 +234,18 @@ footer {
 }
 
 #content {
-    display: block;
-    height: auto;
-    clear: both;
+    width: 960px;
+    margin: auto;
+    margin-bottom: 136px;
+    position: relative;
+    height: 100%;
 }
 
 #textAboutMe {
     margin: 34px;
     width: 580px;
-    font-size: 20px;
-    color: #777;
     height: auto;
     float: right;
-    line-height: 175%;
 }
 
 #images {
@@ -166,12 +255,7 @@ footer {
     top: 76px;
 }
 
-#footer {
-    margin-top: 40px;
-    height: 96px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
+#container {
+    height: 100%;
+    width: 100%;
 }
-

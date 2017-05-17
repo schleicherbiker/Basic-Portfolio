@@ -116,6 +116,18 @@ footer {
 }
 
 /*----------Class style----------*/
+.banner {
+    width: 272px;
+    height: 60px;
+    top: 65%;
+    border: 1px solid red;
+    background: #4aaaa5;
+    position: relative;
+    color: white;
+    font-size: 24px;
+    z-index: 1;
+}
+
 .center {
     display: flex;
     align-items: center;
@@ -167,6 +179,11 @@ footer {
     justify-content: left;
 }
 
+.projectImage {
+    position: relative;
+    bottom: 60px;
+}
+
 .separator {
     padding: 0;
     height: 96px;
@@ -174,6 +191,23 @@ footer {
     float: right;
     color: #aaa;
     transition: .2s ease;
+}
+
+.project {
+    display: block;
+    width: 272px;
+    height: 200px;
+    margin-bottom: 40px;
+    background: pink;
+    background-image: url("https://placehold.it/272x200")
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
 }
 
 .contactBox {
@@ -258,4 +292,10 @@ footer {
 #container {
     height: 100%;
     width: 100%;
+}
+
+#portfolios {
+    width: 580px;
+    height: 680px;
+    margin-top: 36px;
 }
